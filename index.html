@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Funciona o Tráfego Web?</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; background-color: #f4f4f9; color: #333; }
+        h1 { color: #0366d6; }
+        .pacote { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px; }
+        .camada { padding: 10px; margin: 5px 0; border-left: 5px solid; }
+        .tcp { border-color: #e34c26; background-color: #ffebe6; }
+        .ip { border-color: #f1e05a; background-color: #fffde6; }
+    </style>
+</head>
+<body>
 
+    <h1>Analisador de Tráfego Web 🌐</h1>
+    <p>Bem-vindo ao projeto! Aqui vamos entender de forma didática como um pacote de internet viaja quando você acessa um site.</p>
+
+    <div class="pacote">
+        <h2>O que tem dentro de um "Pacote" de dados?</h2>
+        <p>Quando você acessa um site (como o GitHub), seu computador não envia o site inteiro de uma vez. Ele quebra as informações em pequenos "pacotes". Veja como eles são formados por dentro:</p>
+        
+        <div class="camada ip">
+            <strong>Camada de Rede (IPv4):</strong> 
+            Aqui fica o "endereço de entrega". O IP de origem (você) e o IP de destino (o servidor do site).
+        </div>
+
+        <div class="camada tcp">
+            <strong>Camada de Transporte (TCP):</strong> 
+            Aqui ficam as "portas". A porta 80 é usada para tráfego HTTP (texto normal) e a porta 443 é para HTTPS (tráfego criptografado e seguro).
+        </div>
+    </div>
+
+</body>
+</html>
